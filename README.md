@@ -1,19 +1,19 @@
-Hastane Randevu Sistemi
-Bu belge, PyQt6 kullanılarak geliştirilmiş bir hastane randevu sisteminin dökümantasyonunu içerir. Bu uygulama, hastaların doktor randevularını almasını ve iptal etmesini sağlar.
+# Hastane Randevu Sistemi Uygulaması
 
-İçindekiler
-Giriş
-Hastane Randevu Sistemi Arayüzü
-Hasta, Doktor ve Randevu Sınıfları
-Hastane Randevu Sistemi
-Giriş
-Bu uygulama, PyQt6 ve Python dilinde geliştirilmiş bir masaüstü uygulamasıdır. Kullanıcılar, hastane randevu sistemi üzerinden kayıt olabilir, giriş yapabilir ve doktor randevuları alabilir veya iptal edebilir.
+Bu yazıda, PyQt6 kullanarak bir hastane randevu sistemi uygulaması oluşturduk. Bu uygulama, hastaların doktorlardan randevu almasını sağlar, doktorların müsaitlik durumlarını yönetir ve randevu iptallerini gerçekleştirir.
 
-Hastane Randevu Sistemi Arayüzü
-Arayüz, kullanıcının hasta ismini, doktoru ve randevu tarihini seçebileceği bir form içerir. Kullanıcılar, "Randevu Al" veya "Randevu İptal" düğmelerine tıklayarak işlemlerini gerçekleştirebilirler.
+## Giriş Ekranı
 
-Hasta, Doktor ve Randevu Sınıfları
-Hasta sınıfı, hastanın ismi ve TC kimlik numarasını depolar. Doktor sınıfı, doktorun ismi ve uzmanlık alanını temsil eder. Randevu sınıfı, randevu tarihini, doktoru ve hastayı içerir.
+Uygulama başladığında, bir giriş ekranı görüntülenir. Kullanıcı adı ve şifre istenir. Doğru kullanıcı adı ve şifre girilirse, başarılı giriş bilgilendirme ile karşılanır.
 
-Hastane Randevu Sistemi
-Hastane randevu sistemi, hastaları, doktorları ve randevuları yönetir. Hastalar ve doktorlar eklenir, randevular alınır ve iptal edilir. Doktorun müsaitlik durumu, randevu alma işlemi sırasında kontrol edilir.
+## Randevu Sistemi Arayüzü
+
+Başarılı giriş yapıldığında, hastane randevu sistemi arayüzüne yönlendirilirsiniz. Bu arayüzde randevu almak veya iptal etmek için seçenekler bulunur.
+
+## Randevu Alma
+
+"Hasta İsmi", "Doktor" ve "Randevu Tarihi" seçilerek "Randevu Al" butonuna tıklanır. Eğer seçilen doktorun o tarihte müsait olduğu kontrol edilirse randevu alınır.
+
+## Randevu İptali
+
+"Randevu İptal" butonuna tıklanarak, iptal edilecek randevu tarihi ve doktor seçilir. Ardından eğer o tarihte randevusu olan hastalar bulunursa, onay alınarak randevuları iptal edilir.
